@@ -36,6 +36,18 @@ Run these agents **in sequence** at the start of any new feature or project phas
 
 ---
 
+### Change Management Pipeline
+
+Use these agents when adding or changing requirements against an **existing SPA**. Run them in sequence — the output of each feeds into the next.
+
+| Agent                   | File                                                                                  | Purpose                                                                                                                                |
+| ----------------------- | ------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------- |
+| Change Impact Analyst   | [`change-impact-analyst.agent.md`](.github/agents/change-impact-analyst.agent.md)     | Analyses new requirements against the existing codebase and produces a structured impact analysis document                             |
+| Story Writer            | [`story-writer.agent.md`](.github/agents/story-writer.agent.md)                       | Transforms the impact analysis into well-defined user stories following the INVEST principle                                           |
+| FE Refinement Developer | [`fe-refinement-developer.agent.md`](.github/agents/fe-refinement-developer.agent.md) | Runs an interactive refinement session — works through stories one by one, asks clarifying questions and writes technical descriptions |
+
+---
+
 ### Design & Architecture
 
 Consulted **during refinement**, before development starts on a story.
